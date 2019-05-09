@@ -61,6 +61,13 @@ class AnimalsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowAnimalDetailSegue" {
             // inject dependencies
+            
+            if let detailVC = segue.destination as? AnimalDetailViewController {
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    detailVC.animalName = animalNames[indexPath.row]
+                }
+                detailVC.apiController = apiController
+            }
         }
         else if segue.identifier == "LoginViewModalSegue" {
             // inject dependencies
