@@ -114,7 +114,13 @@
                             <outlet property="delegate" destination="9JZ-Ly-aCa" id="1eI-Hp-Xac"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Animal Spotter" id="Sv5-lB-j6L"/>
+                    <navigationItem key="navigationItem" title="Animal Spotter" id="Sv5-lB-j6L">
+                        <barButtonItem key="leftBarButtonItem" title="Get Animals" id="hza-gQ-cwP">
+                            <connections>
+                                <action selector="getAnimals:" destination="9JZ-Ly-aCa" id="Gqj-MF-WqM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="fYv-hU-wkc" kind="presentation" identifier="LoginViewModalSegue" id="Tc6-TK-qmq"/>
                     </connections>
