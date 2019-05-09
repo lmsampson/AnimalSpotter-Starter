@@ -27,6 +27,9 @@
                                             <segment title="Sign Up"/>
                                             <segment title="Sign In"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="signInTypeChanged:" destination="fYv-hU-wkc" eventType="valueChanged" id="pdq-xN-5c7"/>
+                                        </connections>
                                     </segmentedControl>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpz-u1-zcQ">
                                         <rect key="frame" x="0.0" y="41" width="382" height="30"/>
@@ -47,6 +50,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="fYv-hU-wkc" eventType="touchUpInside" id="39B-lS-P34"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -64,6 +70,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HCO-4c-Ipd"/>
                     </view>
+                    <connections>
+                        <outlet property="loginTypeSegmentedControl" destination="aW1-IY-ebQ" id="wKb-cH-GYk"/>
+                        <outlet property="passwordTextField" destination="Vga-nG-cJ8" id="INk-Sl-GdX"/>
+                        <outlet property="signInButton" destination="l8d-j0-sqF" id="chv-Cu-8UT"/>
+                        <outlet property="usernameTextField" destination="qpz-u1-zcQ" id="fvw-8M-LYQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdi-kT-dVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
