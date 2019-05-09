@@ -63,6 +63,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gAX-fG-ngs" firstAttribute="top" secondItem="HCO-4c-Ipd" secondAttribute="top" constant="40" id="lan-VF-6r0"/>
                             <constraint firstItem="gAX-fG-ngs" firstAttribute="centerX" secondItem="9kz-X3-jPY" secondAttribute="centerX" id="o0v-0M-fzK"/>

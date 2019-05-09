@@ -11,6 +11,7 @@ import UIKit
 class AnimalsTableViewController: UITableViewController {
     
     private var animalNames: [String] = []
+    let apiController = APIController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class AnimalsTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         // transition to login view if conditions require
+        if apiController.bearer == nil {
+            performSegue(withIdentifier: "LoginViewModalSegue", sender: self)
+        }
     }
 
     // MARK: - Table view data source
